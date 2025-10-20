@@ -6,11 +6,12 @@ Automatically generate API, UI, and functional test cases from your requirement 
 
 This tool streamlines QA workflows by using advanced language models to analyze technical documentation and automatically generate structured, production-ready test cases. Extract test cases directly from your existing documentation and export them in CSV format—ready for manual testing, automation frameworks, or quality management platforms.
 
+
 ### Supported Test Case Types
 
 | Type | Description | Source Documents |
 |------|-------------|------------------|
-| **API Tests** | Endpoint validation, payload testing, response verification, error handling | Swagger/OpenAPI (.json, .yaml) |
+| **API Tests** | Endpoint validation, payload testing, response verification, error handling | Swagger/OpenAPI (.json, .yaml) ONLY 1 SWAGGER AT A TIME RIGHT NOW(WIP) |
 | **UI Tests** | Form validation, button states, navigation flows, user interactions | Requirements (.txt, .md, .docx) |
 | **Functional/E2E Tests** | Complete user journeys combining UI and API flows | All text-based documents |
 
@@ -87,7 +88,7 @@ Place your source documents in the `requirements_docs/` folder:
 
 ```bash
 python app.py \
-  --query "Generate positive, negative, and validation API test cases strictly using endpoints from swagger_example.json." \
+  --query "Generate positive, negative, and validation API test cases strictly using endpoints from petstore-swagger.json." \
   --type api
 ```
 
