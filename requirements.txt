@@ -1,0 +1,5 @@
+transformers==4.45.0
+torch==2.2.0
+tqdm
+numpy
+groq==0.32.0

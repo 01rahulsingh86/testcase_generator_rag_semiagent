@@ -1,0 +1,13 @@
+# Login and Checkout Functional Requirements
+
+## Login Feature
+- Users must be able to log in with email and password.
+- Password must have at least 8 characters, one uppercase, and one special character.
+- Show "Invalid credentials" for wrong password.
+- Implement "Forgot Password" flow that sends reset link.
+
+## Checkout Feature
+- Users can add items to cart and proceed to checkout.
+- Payment methods supported: Credit Card, PayPal.
+- Address and phone validation must be mandatory before placing order.
+- Confirmation email should be sent after successful payment.

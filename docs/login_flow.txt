@@ -1,0 +1,1 @@
+Login with email and password should validate both fields and redirect to dashboard after success.
